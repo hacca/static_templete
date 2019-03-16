@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../config/_base_setting";
+@import "../config/_mixin";
+
+/*-----------------------------------------------
+ __footer
+-----------------------------------------------*/
+
+.md_footer {
+    background: #eee;
+    padding: 60px 0;
+}
+.md_footer__logo {
+    margin-bottom: 1em;
+    a {
+        text-decoration: none;
+        color: $base_font__color;
+        transition: all .1s linear;
+        &:hover {
+            color: $link_color;
+        }
+    }
+}
+
+.md_footer__nav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        li {
+            padding: 0 .5em;
+            position: relative;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                height: calc(100% - .75em );
+                width: 1px;
+                background: #999;
+                transform: translateY(-50%);
+            }
+            a {
+                padding: 0 .5em;
+                text-decoration: none;
+                color: $base_font__color;
+                transition: all .1s linear;
+                @include media(480px) {
+                    font-size: 11px;
+                }
+                &:hover {
+                    color: $link_color;
+                }
+            }
+        }
+    }
+}
+
+

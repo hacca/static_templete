@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "../config/_base_setting";
+@import "../config/_mixin";
+
+/*-----------------------------------------------
+ __layout
+-----------------------------------------------*/
+
+.dnon {display: none;}
+
+.l_row {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    &.mx_1200 {
+        max-width: 1200px;
+    }
+    &.mx_1024 {
+        max-width: 1024px;
+    }
+    &.mx_1100 {
+        max-width: 1100px;
+    }
+    &.pd_side {
+        padding: 0 5%;
+    }
+    &.pd_side3 {
+        padding: 0 3%;
+    }
+    &.pd_side2 {
+        padding: 0 2%;
+        @include media(1200px) {
+            padding: 0 5%;
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+}

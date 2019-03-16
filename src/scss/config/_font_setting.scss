@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "_mixin";
+
+body {
+    line-height: 1.75;
+    font-size: 16px;
+    font-size: 1rem;
+    word-wrap : break-word;
+    overflow-wrap : break-word;
+    font-weight: normal;
+    font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Roboto, Meiryo, sans-serif;
+    text-rendering: optimizeLegibility;
+    color: $base_font__color;
+    text-align: justify;
+}
+
+.palt {
+    font-feature-settings : "palt";
+    letter-spacing: .05em;
+}
+.pkna {
+    font-feature-settings : "pkna";
+}
+
+a, a:link, a:active, a:visited {text-decoration: underline;outline: none;}
+a:hover, a:active {outline: 0;}
+a, a:visited, a:focus, a:active {color: $link-color;}
+a:hover {color: $link-color;}
+
+/*-----------------------------------------------
+ __fontfamily
+-----------------------------------------------*/
+.serif {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', '小塚明朝 ProN', 'メイリオ', Meiryo, serif;
+}
+/*--- google font ---*/
+.gf_noto {font-family: 'Noto Sans JP', sans-serif;}
+// <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+.gf_noto__serif {font-family: 'Noto Serif JP', serif;}
+// <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+
+
+@import "_font_setting__extend";
+.fw700 {@extend %fw700;}
+.fw600 {@extend %fw600;}
+.fw500 {@extend %fw500;}
+.fw400 {@extend %fw400;}
+.fw300 {@extend %fw300;}
+
+.lt1 {@extend %lt1;}
+.lt2 {@extend %lt2;}
+.lt3 {@extend %lt3;}
+
+.fz_42 {@extend %fz_42;}
+.fz_36 {@extend %fz_36;}
+.fz_30 {@extend %fz_30;}
+.fz_28 {@extend %fz_28;}
+.fz_24 {@extend %fz_24;}
+.fz_22 {@extend %fz_22;}
+.fz_20 {@extend %fz_20;}
+.fz_18 {@extend %fz_18;}
+.fz_16 {@extend %fz_16;}
+.fz_15 {@extend %fz_15;}
+.fz_14 {@extend %fz_14;}
+.fz_13 {@extend %fz_13;}
+.fz_12 {@extend %fz_12;}
+

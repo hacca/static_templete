@@ -1,0 +1,643 @@
+@charset "utf-8";
+@import "../config/_base_setting";
+@import "../config/_mixin";
+
+
+/*-- mailform --*/
+
+.form_wrapper {
+    padding: 40px 0;
+    padding-top: 80px;
+    .form_fix {
+        padding: 0;
+    }
+}
+
+form.wpcf7-form.sent {
+    .form_fix {
+        display: none;
+    }
+    .form_confirm {
+        position: static;
+        animation: confirm .5s .2s ease-in forwards;
+    }
+}
+
+.form_confirm {
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0;
+    .innr {
+        padding: 30px 5%;
+        border: 3px double #3B5998;
+        border-right: none;
+        border-left: none;
+    }
+}
+.form_confirm__ttl {
+    color: #3B5998;
+    margin-bottom: .5em;
+}
+.form_confirm__link {
+    padding-top: 20px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        box-sizing: border-box;
+        white-space: nowrap;
+        line-height: 1;
+        padding : 1em 3em;
+        color: #fff;
+        background: #3B5998;;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+}
+
+@keyframes confirm {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.form_outer__ttl {
+}
+.form_outer__column {
+    padding-bottom: 2em;
+}
+
+#contactform {
+    input[type="text"],input[type="email"],input[type="tel"],textarea,select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        font-size: 18px;
+        background: #fff;
+        padding: .8em 1em;
+        border: 2px solid #ddd;
+        color: #333;
+        box-shadow: none;
+        border-radius: 0px;
+        resize: none;
+        box-sizing: border-box;
+        @include media(979px) {
+            font-size: 16px;
+        }
+        &::-webkit-input-placeholder{
+            color: #ccc;
+            font-size: 14px;
+        }
+        &::-moz-placeholder{
+            color: #ccc;
+        }
+        &:-ms-input-placeholder {
+            color: #ccc;
+        }
+        &:focus {
+            border-color: $formcolor;
+            border-radius: 0px;
+            outline: none;
+        }
+    }
+    select {
+        padding-right: 2em;
+    }
+    input[type="submit"] {
+        border-radius: 0;
+        -webkit-box-sizing: content-box;
+        -webkit-appearance: button;
+        appearance: button;
+        border: none;
+        &::-webkit-search-decoration {
+          display: none;
+        }
+        &::focus {
+          outline-offset: -2px;
+        }
+        display: inline-block;
+        padding: 1em 2em;
+        color: #FFF;
+        font-size:16px;
+        text-decoration: none;
+        cursor: pointer;
+        border:none;
+        background: $formcolor;
+        border-radius: 0;
+        transition: all 0.2s linear;
+        opacity: 1;
+        box-sizing: border-box;
+        outline: none;
+        &:hover {
+            background:darken($formcolor,5%);
+        }
+        &.mf_submit:disabled {
+            opacity: 0.4;
+            background: #ccc;
+        }
+    }
+    input[type='checkbox']{
+        filter: alpha(opacity=0);
+        -moz-opacity:0;
+        opacity:0;
+        position: absolute;
+    }
+    .chk_target {
+        height: 32px;
+        width: 32px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 2px solid #ddd;
+        cursor: pointer;
+        transition: all 0.1s linear;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 5px;
+            width: 8px;
+            height: 3px;
+            background: #ddd;
+            transform: rotate(45deg);
+            transition: all 0.1s linear;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 9px;
+            width: 16px;
+            height: 3px;
+            background: #ddd;
+            transform: rotate(-45deg);
+            transition: all 0.1s linear;
+        }
+        &.c_on{
+            border-color: transparent;
+            &:before {
+                background: $formcolor;
+            }
+            &:after {
+                background: $formcolor;
+            }
+        }
+    }
+    #accept{
+        position: relative;
+        display: block;
+        cursor: pointer;
+        line-height: 28px;
+        padding: 0;
+        margin-top: 1em;
+        .note {
+            @include media(660px) {
+                font-size: 13px;
+            }
+        }
+    }
+    select {
+        text-indent: 0.01px;
+        text-overflow: '';
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    .imeoff {
+        ime-mode: inactive;
+    }
+    .imeon {
+        ime-mode:active;
+    }
+    .mf_mid {
+        width: 100%;
+    }
+    .mf_75 {
+        width: 75%;
+        @include media(660px) {
+            width: 100%;
+        }
+    }
+    .mf_sml {
+        width: 50%;
+        @include media(660px) {
+            width: 100%;
+        }
+    }
+    .mf_readonly {
+        color: $formcolor!important;
+        pointer-events : none;
+    }
+    .mf_capt {
+        width: 50%;
+    }
+    .capimg {
+        vertical-align: top;
+        padding: .7em .5em;
+        background: $formcolor;
+    }
+    .comment {
+        font-size: 12px;
+    }
+    .mf_textarea_tbl {
+        width: 100%;
+    }
+    .smp {
+        margin: 2em auto 0 auto;
+        text-align: center;
+        padding-left: 16px;
+    }
+    .select_width {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+#contactform {
+    .form_outer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 15px;
+        @include media(767px) {
+            display: block;
+            padding-top: 15px;
+            font-size: 13px;
+        }
+        &.singlenote {
+            padding: 1em 0 0 0;
+            margin-left: auto;
+            width: 70%;
+            color: $formcolor;
+            @include media(480px) {
+                width: 100%;
+                margin-left: 20px;
+            }
+            .inner {
+                .note {
+                    padding-left: 40px;
+                    display: block;
+                    @include media(660px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &.inline {
+            margin-left: auto;
+            width: 70%;
+            @include media(480px) {
+                width: 100%;
+            }
+        }
+        .tbl_cel {
+            flex: 0 1 70%;
+            width: 70%;
+            padding: .5em 0;
+            @include media(960px) {
+                flex: 0 1 65%;
+                width: 65%;
+            }
+            @include media(767px) {
+                width: 100%;
+                padding-top: 0;
+            }
+            &.radio_wrapper {
+                padding-top: 1em;
+                padding-bottom: 1em;
+                &.storewrap {
+                    pointer-events : none;
+                @include media(480px) {
+                        .wpcf7-list-item {
+                            white-space: nowrap;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            &.file_wrapper {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            &.flexcolumn {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                @include media(480px) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        .heading {
+            flex: 0 1 30%;
+            width: 30%;
+            text-align: right;
+            box-sizing: border-box;
+            padding-right: 20px;
+            white-space: nowrap;
+            @include media(960px) {
+                flex: 0 1 35%;
+                width: 35%;
+            }
+            @include media(767px) {
+                width: 100%;
+                text-align: left;
+            }
+            &.required::after {
+                content: "必須";
+                font-size: 12px;
+                color: #fff;
+                background: #23AC38;
+                width: 50px;
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+                letter-spacing: .5em;
+                text-indent: .5em;
+                border-radius: 3px;
+                white-space: nowrap;
+                line-height: 1;
+                padding: .5em 0;
+                margin-left: 1em;
+                @include media(767px) {
+                    font-size: 10px;
+                    width: 40px;
+                }
+            }
+            &.required:after {
+                content: "必須";
+            }
+            &.optional:after {
+                content: "任意";
+                background: #ccc;
+            }
+            &.pdl {
+                padding-left: 1em;
+            }
+        }
+        .attention {
+            font-size: 12px;
+            color: $formcolor;
+            display: block;
+            padding-top: 5px;
+        }
+        .radio_wrapper .wpcf7-form-control-wrap {
+            label {
+                //cursor: pointer;
+                input[type="radio"] {
+                    display: none;
+                    &:checked + span {
+                        color: $formcolor;
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 3px;
+                            left: 5px;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background: $formcolor;
+                        }
+                    }
+                }
+                span {
+                    padding-left: 30px;
+                    position: relative;
+                    margin-right: 20px;
+                    line-height: 1;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -2px;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid #ddd;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            &.insurance {
+                display: block;
+                .wpcf7-list-item {
+                    padding: 5px 0;
+                    display: block;
+                    &.has-free-text {
+                        input[type="text"] {
+                            padding: .2em 1em;
+                        }
+                    }
+                }
+            }
+        }
+        .select_wrapper {
+            .select_txt {
+                padding-left: .5em;
+            }
+            &.inline {
+                padding-right: 10px;
+                @include media(480px) {
+                    width: auto;
+                    &:first-child {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .etc_form {
+            margin-top: 10px;
+            input[type="text"] {
+                padding: .2em 1em;
+            }
+        }
+        .radio_wrapper .wpcf7-form-control-wrap {
+            label {
+                cursor: pointer;
+                input[type="radio"] {
+                    display: none;
+                    &:checked + span {
+                        color: #000;
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 1px;
+                            left: 6px;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background: #3B5998;
+                        }
+                    }
+                }
+                span {
+                    padding-left: 30px;
+                    position: relative;
+                    margin-right: 20px;
+                    line-height: 1;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -5px;
+                        left: 0;
+                        width: 26px;
+                        height: 26px;
+                        border: 2px solid #ccc;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            &.insurance {
+                display: block;
+                .wpcf7-list-item {
+                    padding: 5px 0;
+                    display: block;
+                    &.has-free-text {
+                        input[type="text"] {
+                            padding: .2em 1em;
+                        }
+                    }
+                }
+            }
+        }
+        .select_wrapper .wpcf7-form-control-wrap {
+            position: relative;
+            &::before {
+                pointer-events: none;
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 24px;
+                right: 10px;
+                top: -2px;
+                font-family: "Font Awesome 5 Free";
+                content: '\f078';
+                text-rendering: auto;
+                color: $formcolor;
+                font-weight: bold;
+            }
+        }
+        .kome_txt {
+            font-size: 10px;
+            color: $formcolor;
+            vertical-align: super;
+        }
+    }
+}
+
+
+
+.form_section {
+    padding-bottom: 40px;
+    &.privacy {
+        border: 2px solid #3B5998;
+        padding-bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        @include media(767px) {
+            width: 100%;
+        }
+    }
+}
+.form_section__ttl {
+    margin-bottom: .5em;
+}
+.form_section__note {
+    margin-bottom: 1em;
+}
+.form_section__head {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    padding: 0 5% 0 15%;
+    @include media(767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.form_section__subcolumn {
+    background: #eee;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+/* overwrite wpcf7 */
+div.wpcf7 {
+    position: relative;
+}
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: .5em auto 0 auto!important;
+}
+div.wpcf7-response-output {
+    // position: relative;
+    // bottom: -20px;
+    position: absolute;
+    top: 20px;
+    background: none;
+    border: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto!important;
+    color: #fff;
+    box-sizing: border-box;
+    background: $formcolor;
+    font-weight: bold;
+    line-height: 2;
+    @include media(600px) {
+        font-size: 12px;
+    }
+}
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-spam-blocked,
+div.wpcf7-validation-errors {
+    border: none!important;
+}
+div.wpcf7-mail-sent-ok {
+    color: #fff;
+    background: #000;
+    padding: 1em ;
+    background: #3B5998;
+}
+.wpcf7-not-valid {
+    border-color: $formcolor!important;
+    border-width: 2px!important;
+    background: lighten($formcolor,55%)!important;
+
+}
+span.wpcf7-not-valid-tip {
+    font-size: 12px!important;
+    background: transparent!important;
+    border: none!important;
+    color: #dc143c!important;
+    box-sizing: border-box!important;
+    padding: .5em 10px 0 10px!important;
+    line-height: 1.4!important;
+    display: block;
+}
+.screen-reader-response {
+    display: none;
+}
+.wpcf7-response-output {
+}
+.wpcf7-validation-errors {
+    display: block;
+    background: transparent!important;
+    color: #dc143c!important;
+}

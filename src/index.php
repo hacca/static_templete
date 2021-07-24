@@ -8,14 +8,15 @@
     <meta name="viewport" content="width=device-width">
     <title>勹果【ほうか】Wakayama Fruits & Wine 果実の美味しさを包み込んでできたお酒。｜湯浅ワイナリー</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.0/jquery.fancybox.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css" />
     <link rel="stylesheet" media="all" href="/assets/css/default.css" />
-    <link rel="stylesheet" media="all" href="/assets/css/style.css?20190912" />
+    <link rel="stylesheet" media="all" href="/assets/css/style.css?20210724" />
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="勹果【ほうか】Wakayama Fruits & Wine 果実の美味しさを包み込んでできたお酒。｜湯浅ワイナリー" />
     <meta property="og:description" content="和歌山県は代表的な有田みかんをはじめとして、みなべ田辺地域の梅、紀の川沿いの桃、高野山のふもと伊都地方の富有柿、そして県南部古座川町のゆずなど果物の成長で季節を感じることができる・・そんな豊かな和歌山は、まさにフルーツの楽園なのです。その和歌山産の果物をギュッと閉じ込めたように、包み込んで作ったお酒がほうか。湯浅ワイナリーから新しいフルーツの楽しみ方をお届けします。" />
@@ -75,7 +76,7 @@
                                         <p>日本有数のみかんの産地和歌山県。その中でもこの有田地域は辺り一面がみかん畑で、収穫時期にもなるとたわわに実ったみかんが山々を黄色く色づけます。海がせまり年中温暖な気候と、石垣階段型の畑で真夏の太陽をあますことなく浴びた実は、</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_mikan" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_mikan" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                         </li>
                         <li class="momo">
@@ -87,7 +88,7 @@
                                         <p>桃の西日本一の生産量を誇る和歌山県は知る人ぞ知る桃どころ。特に県北部紀の川沿いの地域は、江戸時代紀州藩主徳川家の命により桃の栽培がはじまり、砂れきを含んだ水はけのよい土地であったことと、栽培農家の長年のたゆまぬ努力によって、美味しい桃が収穫されます。桃色がかったうすい絹のような皮をむくと、大変柔らかく甘い果汁がじゅわっとしたたりおちてきます。</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_momo" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_momo" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                         </li>
                         <li class="ume">
@@ -99,7 +100,7 @@
                                         <p>日本一の梅の里みなべ町。紀州南高梅が実るのはまさに梅雨のころ。園地いっぱいにひろがる香りは、梅の実から漂うものとは思えないほど、なんとも甘い香りです。そんな香り高い梅の実を収穫後すぐにじっくり漬けると黄金色の梅ジュースが出来上がります。</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_ume" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_ume" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                         </li>
                         <li class="yuzu">
@@ -111,7 +112,7 @@
                                         <p>和歌山県の南部に位置する古座川町は清流とゆずの町です。町の中でも山深い平井地区の方々が大切に育て、秋から冬にかけてまっ黄色に実をつけるゆずを、</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_yuzu" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_yuzu" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                         </li>
                         <li class="jabara">
@@ -123,7 +124,7 @@
                                         <p>日本で唯一の飛び地として知られる北山村は、熊野の山々に囲まれた人口500人の自然豊かな秘境です。そんな小さな村の民家に自生していた珍しい柑橘が「じゃばら」。「</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_jabara" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_jabara" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                         </li>
                         <li class="ume">
@@ -135,7 +136,7 @@
                                         <p>日本一の梅の里みなべ町。紀州南高梅が実るのはまさに梅雨のころ。園地いっぱいにひろがる香りは、梅の実から漂うものとは思えないほど、なんとも甘い香りです。そんな香り高い梅の実を収穫後すぐにじっくり漬けると黄金色の梅ジュースが出来上がります。</p>
                                     </div>
                                 </div>
-                                <a data-fancybox data-src="#content_umesp" href="javascript:;" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
+                                <a data-modaal href="#content_umesp" class="fz_14 gf_noto__serif more"><span>詳しく見る</span></a>
                             </div>
                             <div class="gf_noto__serif bline"><span>Sparkling</span></div>
                         </li>
@@ -664,7 +665,6 @@
 
     </div><!-- wrap -->
 
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="/assets/js/config.js"></script>
 
 </body>

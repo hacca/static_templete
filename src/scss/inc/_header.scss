@@ -94,8 +94,10 @@
         display: block;
         box-sizing: border-box;
         @include media(660px) {
-            left: 12%;
-            width: 88%;
+            // left: 12%;
+            // width: 88%;
+            left: 5%;
+            width: 92%;
         }
     }
 }
@@ -127,8 +129,10 @@
     flex: 0 1 60%;
     @include media(660px) {
         flex: 0 1 100%;
-        padding-left: 8%;
+        // padding-left: 8%;
         padding-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 }
 .md_header__read {

@@ -448,77 +448,7 @@
             </div>
 
 
-            <section class="pTop_item__wrap">
-                <article class="pTop_item mikan">
-                    <div class="l_row mx_1280 pd_side8">
-                        <div class="pTop_item__column">
-                            <div class="pTop_item__img">
-                                <img src="/assets/images/item_mikan.png" alt="勹果 HOUKA （ほうか）有田みかん" width="300">
-                            </div>
-                            <div class="pTop_item__cont">
-                                <figure class="pTop_item__logo"><img src="/assets/images/item_logo1.png" alt="勹果 HOUKA （ほうか）有田みかん" width="150"></figure>
-                                <h2 class="fz_28 gf_noto__serif pTop_item__ttl"><span class="jp">有田みかん</span><span class="en">Arida Mikan</span></h2>
-                                <div class="fz_14 gf_noto__serif pTop_item__summary">
-                                    <p>山々の連なる有田地域はどこもかしこもみかん畑で、収穫時期にもなるとたわわに実ったみかんがあたりを黄色く色づけます。海がせまり年中温暖な気候と、石垣階段型の畑で真夏の太陽をあますことなく浴びた実は、その中に甘さを凝縮させ、糖度が極めて高くコクのある有田みかんになるのです。</p>
-                                    <p>勹果「有田みかん」は、そんなジューシーな果汁を、すっきりとした国産の白ワインに合わせて、口の中に柑橘の爽やかさが広がるどなたにも飲みやすいお酒です。</p>
-                                </div>
-                                <ul class="fz_12 pTop_item__ingredients">
-                                    <li>品目:リキュール</li>
-                                    <li>原材料名:ワイン(国内製造)、みかん果汁(和歌山県製造)、醸造用アルコール/香料</li>
-                                    <li>内容量：180ml・500ml</li>
-                                    <li>アルコール分:8.5度</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="pTop_item momo">
-                    <div class="l_row mx_1280 pd_side8">
-                        <div class="pTop_item__column">
-                            <div class="pTop_item__img">
-                                <img src="/assets/images/item_momo.png" alt="勹果 HOUKA （ほうか）和歌山もも" width="300">
-                            </div>
-                            <div class="pTop_item__cont">
-                                <figure class="pTop_item__logo"><img src="/assets/images/item_logo2.png" alt="勹果 HOUKA （ほうか）和歌山もも" width="150"></figure>
-                                <h2 class="fz_28 gf_noto__serif pTop_item__ttl"><span class="jp">和歌山もも</span><span class="en">Wakayama Momo</span></h2>
-                                <div class="fz_14 gf_noto__serif pTop_item__summary">
-                                    <p>桃の西日本一の生産量を誇る和歌山県は知る人ぞ知る桃どころ。特に県北部紀の川沿いの地域は、江戸時代紀州藩主徳川家の命により桃の栽培がはじまり、砂れきを含んだ水はけのよい土地であったことと、栽培農家の長年のたゆまぬ努力によって、美味しい桃が収穫されます。桃色がかったうすい絹のような皮をむくと、大変柔らかく甘い果汁がじゅわっとしたたりおちてきます。</p>
-                                    <p>勹果「和歌山もも」はその甘い果汁を、国産の白ワインに合わせました。桃の甘い香りが優雅なひとときにお連れするお酒です。</p>
-                                </div>
-                                <ul class="fz_12 pTop_item__ingredients">
-                                    <li>品目:リキュール</li>
-                                    <li>ワイン(国内製造)、もも果汁(和歌山県製造)、醸造用アルコール、砂糖/Lアスコルビン酸、香料</li>
-                                    <li>内容量：180ml・500ml</li>
-                                    <li>アルコール分:7.0度</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="pTop_item ume">
-                    <div class="l_row mx_1280 pd_side8">
-                        <div class="pTop_item__column">
-                            <div class="pTop_item__img">
-                                <img src="/assets/images/item_ume.png" alt="勹果 HOUKA （ほうか）紀州南高梅" width="300">
-                            </div>
-                            <div class="pTop_item__cont">
-                                <figure class="pTop_item__logo"><img src="/assets/images/item_logo3.png" alt="勹果 HOUKA （ほうか）紀州南高梅" width="150"></figure>
-                                <h2 class="fz_28 gf_noto__serif pTop_item__ttl"><span class="jp">紀州南高梅</span><span class="en">Kishu Nanko Ume</span></h2>
-                                <div class="fz_14 gf_noto__serif pTop_item__summary">
-                                    <p>日本一の梅の里みなべ町。紀州南高梅が実るのはまさに梅雨のころ。園地いっぱいにひろがる香りは、梅の実から漂うものとは思えないほど、なんとも甘い香りです。そんな香り高い梅の実を収穫後すぐにじっくり漬けると黄金色の梅ジュースが出来上がります。</p>
-                                    <p>勹果「紀州南高梅」は、梅ならではのすっきりとさわやかな風味と、甘く豊かな香りのジュースを国産白ワインに合わせました。芳醇な味わいで、大切な方との語らいの場に華を添えるお酒です。</p>
-                                </div>
-                                <ul class="fz_12 pTop_item__ingredients">
-                                    <li>品目:リキュール</li>
-                                    <li>原材料名:ワイン（国内製造）、うめ果汁（和歌山県製造）、醸造用アルコール</li>
-                                    <li>内容量：180ml・500ml</li>
-                                    <li>アルコール分:7.0度</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
+
 
             <div class="l_row mx_1440 pd_side8 ctl_pd">
                 <section class="pTop_buy__wrap">

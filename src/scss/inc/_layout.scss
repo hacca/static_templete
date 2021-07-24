@@ -9,9 +9,17 @@
 .dnon {display: none;}
 
 .l_row {
-    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    &.mx_1440 {
+        max-width: 1440px;
+    }
+    &.mx_1366 {
+        max-width: 1366px;
+    }
+    &.mx_1280 {
+        max-width: 1280px;
+    }
     &.mx_1200 {
         max-width: 1200px;
     }
@@ -21,7 +29,21 @@
     &.mx_1100 {
         max-width: 1100px;
     }
-    &.pd_side {
+    &.mx_900 {
+        max-width: 900px;
+    }
+    &.pr_side8 {
+        padding-right: 8%;
+    }
+    &.pd_side8 {
+        padding: 0 8%;
+        &.ctl_pd {
+            @include media(540px) {
+                padding: 0 5%;
+            }
+        }
+    }
+    &.pd_side5 {
         padding: 0 5%;
     }
     &.pd_side3 {

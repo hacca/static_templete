@@ -7,62 +7,65 @@
 -----------------------------------------------*/
 
 .md_footer {
-    background: #eee;
     padding: 60px 0;
 }
+.md_footer__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include media(767px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
 .md_footer__logo {
-    margin-bottom: 1em;
-    a {
-        text-decoration: none;
-        color: $base_font__color;
-        transition: all .1s linear;
-        &:hover {
-            color: $link_color;
+    flex: 0 1 12%;
+    @include media(767px) {
+        flex: 0 1 100%;
+        padding-bottom: 5%;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        @include media(767px) {
+            width: 25%;
+            margin: 0 auto;
+            max-width: 140px;
         }
     }
 }
+.md_footer__detail {
+    a {
+        text-decoration: none;
+        color: $base_font__color;
+    }
+}
 
-.md_footer__nav {
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        li {
-            padding: 0 .5em;
-            position: relative;
-            &:first-child {
-                padding-left: 0;
-            }
-            &:last-child {
-                &:after {
-                    display: none;
-                }
-            }
-            &:after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 0;
-                height: calc(100% - .75em );
-                width: 1px;
-                background: #999;
-                transform: translateY(-50%);
-            }
-            a {
-                padding: 0 .5em;
-                text-decoration: none;
-                color: $base_font__color;
-                transition: all .1s linear;
-                @include media(480px) {
-                    font-size: 11px;
-                }
-                &:hover {
-                    color: $link_color;
-                }
-            }
-        }
+.md_footer__info {
+    @include media(660px) {
+        flex: 0 1 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .innr {
+        text-align: left;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
+.md_footer__infoTtl {
+    margin-bottom: .5em;
+}
+.md_footer__copy {
+    padding-top: 40px;
+    text-align: center;
+    color: #666;
+    @include media(660px) {
+        padding-top: 0;
     }
 }
 

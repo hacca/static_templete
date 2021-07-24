@@ -1,7 +1,9 @@
 //Sassコンパイル
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const autoprefixer = require('gulp-autoprefixer');
+
 const plumber = require("gulp-plumber");
 const sourcemaps = require('gulp-sourcemaps');
 const filter = require('gulp-filter');
@@ -32,8 +34,8 @@ gulp.task('sass', function(){
     .pipe(sass({
         outputStyle: 'expanded',
     }))
-    .pipe(autoprefixer({
-        browsers: ["last 2 versions", "Firefox ESR"],
+    .pipe(autoprefixer( {
+        grid: "autoplace"
     }))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(path.css))
@@ -46,7 +48,7 @@ gulp.task('sass', function(){
 gulp.task('server', function () {
     browserSync({
         notify: false,
-        proxy: "http://localhost.xxxxxxxx.xxxxx/"
+        proxy: "http://localhost.houka.yuasa-winery.jp/"
     });
 });
 

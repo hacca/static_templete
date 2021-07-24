@@ -8,8 +8,7 @@
    # Global selectors
    # ================================================================= */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-y: scroll;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
@@ -19,8 +18,7 @@ html {
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ::before,

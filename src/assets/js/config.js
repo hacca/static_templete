@@ -1,15 +1,9 @@
 (function($) {
     $(function(){
 
-        // $(document).ready(function() {
-        //     $('[data-fancybox]').fancybox();
-        // });
-
-        // $(function(){
-        //     AOS.init();
-        // });
-
-
+        $(document).ready(function() {
+            $('[data-fancybox]').fancybox();
+        });
 
         //ナビ
         if($('#fn_guest__triger').length){
